@@ -1,4 +1,7 @@
 module.exports = class LockMap {
+  /**
+   * Creates a new instance of LockMap
+   */
   constructor () {
     this._map = new Map()
   }
@@ -7,7 +10,7 @@ module.exports = class LockMap {
    * Creates a lock on a given ID and returns a resolve function to unlock the
    * lock
    * @param {*} id
-   * @return {function} the resolve function to call once it to unlock
+   * @return {Function} the resolve function to call once it to unlock
    */
   lock (id) {
     let r
@@ -24,7 +27,7 @@ module.exports = class LockMap {
   /**
    * gets the current lock if any for a given id. If there is a lock this will
    * return a promise that resolves once the lock is unlocked
-   * return {Promise}
+   * @return {Promise}
    */
   getLock (id) {
     return this._map.get(id)

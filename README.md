@@ -34,30 +34,41 @@ console.log('here now!')
 
 # API
 
-## getLock
+-   [constructor](#constructor)
+-   [lock](#lock)
+-   [getLock](#getlock)
 
-[index.js:29-31](https://github.com/wanderer/generic-module/blob/7a91dcb08427a3276a9c9da718c759f1631dc1f5/index.js#L29-L31 "Source code on GitHub")
+## constructor
 
-gets the current lock if any for a given id. If there is a lock this will
-return a promise that resolves once the lock is unlocked
-return {Promise}
+[index.js:5-7](https://github.com/wanderer/lockmap/blob/01587eaf141302ad9c7d7c412205e3c0188dcd49/index.js#L5-L7 "Source code on GitHub")
 
-**Parameters**
-
--   `id`  
+Creates a new instance of LockMap
 
 ## lock
 
-[index.js:12-22](https://github.com/wanderer/generic-module/blob/7a91dcb08427a3276a9c9da718c759f1631dc1f5/index.js#L12-L22 "Source code on GitHub")
+[index.js:15-25](https://github.com/wanderer/lockmap/blob/01587eaf141302ad9c7d7c412205e3c0188dcd49/index.js#L15-L25 "Source code on GitHub")
 
 Creates a lock on a given ID and returns a resolve function to unlock the
 lock
 
 **Parameters**
 
--   `id` **Any** 
+-   `id` **any** 
 
-Returns **function** the resolve function to call once it to unlock
+Returns **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** the resolve function to call once it to unlock
+
+## getLock
+
+[index.js:32-34](https://github.com/wanderer/lockmap/blob/01587eaf141302ad9c7d7c412205e3c0188dcd49/index.js#L32-L34 "Source code on GitHub")
+
+gets the current lock if any for a given id. If there is a lock this will
+return a promise that resolves once the lock is unlocked
+
+**Parameters**
+
+-   `id`  
+
+Returns **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** 
 
 # LICENSE
 [MPL-2.0](https://tldrlegal.com/license/mozilla-public-license-2.0-(mpl-2))
