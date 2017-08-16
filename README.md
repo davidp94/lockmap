@@ -5,10 +5,10 @@
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)  
 
-Creates a map of locks to ids that can be used as a semaphore
+Creates a promise based map of locks that can be used as a semaphore
 
 # INSTALL
-`npm install <name>`
+`npm install lockmap`
 
 # USAGE
 

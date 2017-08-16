@@ -1,7 +1,7 @@
 {
-  "name": "name",
+  "name": "lockmap",
   "version": "0.0.0",
-  "description": "stuff",
+  "description": "Creates a promise based map of locks that can be used as a semaphore",
   "main": "index.js",
   "scripts": {
     "coverage": "istanbul cover ./tests/index.js",
@@ -11,25 +11,25 @@
     "build:docs": "documentation --github  -f md ./index.js > ./docs/index.md"
   },
   "keywords": [
+    ""
   ],
   "author": "mjbecze <mjbecze@gmail.com>",
   "license": "MPL-2.0",
   "dependencies": {
   },
   "devDependencies": {
-    "browserify": "^14.2.0",
     "coveralls": "^2.11.4",
-    "documentation": "^3.0.4",
+    "documentation": "^5.2.0",
     "istanbul": "^0.4.1",
-    "standard": "^9.0.0",
+    "standard": "^10.0.0",
     "tape": "^4.0.3"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:wanderer/lockmap.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/wanderer/lockmap/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/wanderer/lockmap"
 }

@@ -1,7 +1,7 @@
 const tape = require('tape')
 const LockMap = require('../')
 
-tape('lockmap tests', async (t) => {
+tape('lockmap tests', async t => {
   t.plan(2)
   // create a new lock map
   const lockmap = new LockMap()
