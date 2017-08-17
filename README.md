@@ -1,4 +1,4 @@
-# SYNOPSIS 
+# SYNOPSIS :lock: :globe_with_meridians: 
 [![NPM Package](https://img.shields.io/npm/v/lockmap.svg?style=flat-square)](https://www.npmjs.org/package/lockmap)
 [![Build Status](https://img.shields.io/travis/wanderer/lockmap.svg?branch=master&style=flat-square)](https://travis-ci.org/wanderer/lockmap)
 [![Coverage Status](https://img.shields.io/coveralls/wanderer/lockmap.svg?style=flat-square)](https://coveralls.io/r/wanderer/lockmap)
