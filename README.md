@@ -29,7 +29,7 @@ setTimeout(() => {
 }, 300)
 
 // wait until the lock resolves
-await lockmap.getLock(id)
+await lockmap.get(id)
 console.log('here now!')
 ```
 
@@ -58,7 +58,7 @@ lock
 
 Returns **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** the resolve function to call once it to unlock
 
-## getLock
+## get
 
 [index.js:32-34](https://github.com/wanderer/lockmap/blob/01587eaf141302ad9c7d7c412205e3c0188dcd49/index.js#L32-L34 "Source code on GitHub")
 
