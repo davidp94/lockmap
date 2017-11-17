@@ -72,4 +72,4 @@ return a promise that resolves once the lock is unlocked
 Returns **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** 
 
 # LICENSE
-[MPL-2.0](https://tldrlegal.com/license/mozilla-public-license-2.0-(mpl-2))
+<a href="https://tldrlegal.com/license/mozilla-public-license-2.0-(mpl-2)">MPL-2.0</a>
