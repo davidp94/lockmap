@@ -2,9 +2,10 @@ const tape = require('tape')
 const LockMap = require('../')
 
 tape('lockmap tests', async t => {
-  t.plan(2)
+  t.plan(4)
   // create a new lock map
   const lockmap = new LockMap()
+  t.equals(lockmap.toString(), '[object LockMap]')
   const id = 'test'
 
   let first = true
@@ -19,7 +20,9 @@ tape('lockmap tests', async t => {
     unlock()
   }, 300)
 
+  t.equals(lockmap.size, 1)
+
   // wait until the lock resolves
-  await lockmap.getLock(id)
+  await lockmap.get(id)
   t.equals(first, false)
 })

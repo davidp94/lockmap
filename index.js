@@ -4,6 +4,14 @@ module.exports = class LockMap {
    */
   constructor () {
     this._map = new Map()
+
+    const methods = ['clear', 'delete', 'entries', 'forEach', 'get', 'has', 'keys', 'values', Symbol.iterator]
+    const self = this
+    methods.forEach(method => {
+      self[method] = function () {
+        return self._map[method].apply(self._map, arguments)
+      }
+    })
   }
 
   /**
@@ -24,12 +32,11 @@ module.exports = class LockMap {
     return r
   }
 
-  /**
-   * gets the current lock if any for a given id. If there is a lock this will
-   * return a promise that resolves once the lock is unlocked
-   * @return {Promise}
-   */
-  getLock (id) {
-    return this._map.get(id)
+  get size () {
+    return this._map.size
+  }
+
+  get [Symbol.toStringTag] () {
+    return 'LockMap'
   }
 }

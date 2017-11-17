@@ -4,8 +4,8 @@
   "description": "Creates a promise based map of locks that can be used as a semaphore",
   "main": "index.js",
   "scripts": {
-    "coverage": "istanbul cover ./tests/index.js",
-    "coveralls": "npm run coverage && coveralls <coverage/lcov.info",
+    "coverage": "nyc npm test",
+    "coveralls": "npm run coverage && nyc report --reporter=text-lcov | coveralls",
     "lint": "standard",
     "test": "node ./tests/index.js",
     "build:docs": "documentation build --github  -f md ./index.js > ./docs/index.md"
@@ -15,12 +15,11 @@
   ],
   "author": "mjbecze <mjbecze@gmail.com>",
   "license": "MPL-2.0",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "documentation": "^5.3.3",
     "coveralls": "^3.0.0",
-    "documentation": "^5.2.0",
-    "istanbul": "^0.4.1",
+    "nyc": "^11.3.0",
     "standard": "^10.0.0",
     "tape": "^4.0.3"
   },
