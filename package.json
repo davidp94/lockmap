@@ -1,6 +1,6 @@
 {
   "name": "lockmap",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Creates a promise based map of locks that can be used as a semaphore",
   "main": "index.js",
   "scripts": {
