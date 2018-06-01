@@ -19,7 +19,7 @@
   "devDependencies": {
     "documentation": "^6.0.0",
     "coveralls": "^3.0.0",
-    "nyc": "^11.3.0",
+    "nyc": "^12.0.1",
     "standard": "^11.0.0",
     "tape": "^4.0.3"
   },
